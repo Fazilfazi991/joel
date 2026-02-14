@@ -18,10 +18,7 @@ const TrustBadges = () => {
                         <Clock className="text-brand-violet" size={24} />
                         <span className="font-semibold">10+ Years Excellence</span>
                     </div>
-                    <div className="trust-badge flex items-center gap-3">
-                        <Award className="text-brand-green" size={24} />
-                        <span className="font-semibold">Premier Partner</span>
-                    </div>
+                    {/* Premier Partner Removed */}
                 </div>
             </div>
         </div>

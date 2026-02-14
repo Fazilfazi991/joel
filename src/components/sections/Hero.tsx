@@ -9,10 +9,7 @@ const Hero = () => {
                     {/* Left Content */}
                     <div>
                         {/* Badge */}
-                        <div className="inline-flex items-center gap-2 bg-brand-green-50 text-brand-green-hover px-4 py-2 rounded-full border border-brand-green-200 mb-8 w-fit">
-                            <Trophy size={16} />
-                            <span className="text-sm font-bold">#1 Rated CRM Implementation Partner</span>
-                        </div>
+                        {/* Badge Removed */}
 
                         {/* Heading */}
                         <h1 className="text-5xl lg:text-6xl font-bold text-brand-dark mb-6 leading-tight tracking-tight">
