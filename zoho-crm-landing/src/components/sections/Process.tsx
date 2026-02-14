@@ -22,7 +22,7 @@ const Process = () => {
                 {/* Connecting Line */}
                 <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-slate-100 -translate-y-1/2 z-0" />
                 <motion.div
-                    className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-primary-500/30 -translate-y-1/2 z-0 origin-left"
+                    className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-brand-green/30 -translate-y-1/2 z-0 origin-left"
                     initial={{ scaleX: 0 }}
                     whileInView={{ scaleX: 1 }}
                     viewport={{ once: true }}
@@ -39,9 +39,9 @@ const Process = () => {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.3 }}
                         >
-                            <div className="w-16 h-16 rounded-full bg-white border-4 border-primary-500 flex items-center justify-center text-primary-500 mb-6 shadow-lg relative">
+                            <div className="w-16 h-16 rounded-full bg-white border-4 border-brand-green flex items-center justify-center text-brand-green mb-6 shadow-lg relative">
                                 <step.icon size={28} />
-                                <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary-600 text-white text-xs flex items-center justify-center font-bold">
+                                <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-brand-green-hover text-white text-xs flex items-center justify-center font-bold">
                                     {step.id}
                                 </div>
                             </div>

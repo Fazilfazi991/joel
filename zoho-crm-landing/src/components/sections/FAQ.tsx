@@ -55,10 +55,10 @@ const FAQ = () => {
                             onClick={() => setOpenIndex(openIndex === index ? null : index)}
                             className={`w-full flex items-center justify-between p-6 text-left transition-colors ${openIndex === index ? 'bg-slate-50' : 'bg-white hover:bg-slate-50'}`}
                         >
-                            <span className={`font-semibold text-lg ${openIndex === index ? 'text-primary-500' : 'text-slate-900'}`}>
+                            <span className={`font-semibold text-lg ${openIndex === index ? 'text-brand-green' : 'text-slate-900'}`}>
                                 {faq.question}
                             </span>
-                            {openIndex === index ? <Minus className="text-primary-500" /> : <Plus className="text-slate-400" />}
+                            {openIndex === index ? <Minus className="text-brand-green" /> : <Plus className="text-slate-400" />}
                         </button>
                         <AnimatePresence>
                             {openIndex === index && (
