@@ -9,7 +9,7 @@ import Benefits from '../components/sections/Benefits';
 import Process from '../components/sections/Process';
 import Testimonials from '../components/sections/Testimonials';
 import FAQ from '../components/sections/FAQ';
-import Pricing from '../components/sections/Pricing';
+
 import FinalCTA from '../components/sections/FinalCTA';
 import ContactForm from '../components/sections/ContactForm';
 import Footer from '../components/sections/Footer';
@@ -29,7 +29,7 @@ function ZohoLanding() {
                 <Process />
                 <Testimonials />
                 <FAQ />
-                <Pricing />
+                {/* Pricing Section Removed */}
                 <FinalCTA />
                 <ContactForm />
             </main>
