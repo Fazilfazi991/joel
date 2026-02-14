@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aiva - Future of Business Automation</title>
     <meta name="description"
         content="Empowering businesses with intelligent automation, CRM, and custom software solutions. Future-proof your operations with Aiva.">
@@ -17,170 +18,11 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css">
-
-    <style>
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 80vh;
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-group {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2.5rem;
-        }
-
-        .cta-button.secondary {
-            background: transparent;
-            border: 2px solid white;
-            box-shadow: none;
-        }
-
-        .cta-button.secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-    </style>
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Aiva<span>.</span></div>
-                <div class="nav-links">
-                    <a href="index.html" style="color: var(--primary-color);">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="crm.html">CRM</a>
-                    <a href="#">Industries</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </div>
-                <a href="crm.html#trial" class="cta-button">Get Started</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content container reveal active">
-            <h1>Intelligent Solutions for <br><span>Modern Businesses</span></h1>
-            <p>Streamline operations, boost efficiency, and drive growth with our comprehensive suite of automation
-                tools and custom software services.</p>
-            <div class="cta-group">
-                <a href="services.html" class="cta-button">Explore Services</a>
-                <a href="crm.html" class="cta-button secondary">View CRM</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Highlights Section -->
-    <section class="section" style="background: white;">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">Why Aiva?</h2>
-                <p class="section-subtitle">We build software that builds your business.</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card reveal delay-100" onclick="location.href='services.html'"
-                    style="cursor: pointer;">
-                    <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
-                    <h3>Business Automation</h3>
-                    <p>Reduce manual work and errors with intelligent automated workflows.</p>
-                </div>
-
-                <div class="service-card reveal delay-200" onclick="location.href='crm.html'" style="cursor: pointer;">
-                    <div class="service-icon"><i class="fa-solid fa-users-gear"></i></div>
-                    <h3>Advanced CRM</h3>
-                    <p>Manage relationships and close more deals with our powerful CRM platform.</p>
-                </div>
-
-                <div class="service-card reveal delay-300" onclick="location.href='services.html'"
-                    style="cursor: pointer;">
-                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
-                    <h3>Custom Development</h3>
-                    <p>Tailor-made software solutions designed specifically for your unique needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container reveal">
-            <div class="footer-content">
-                <div>
-                    <span class="footer-logo">Aiva<span>.</span></span>
-                    <p style="color: #cbd5e1; max-width: 300px; line-height: 1.8;">
-                        Innovating business processes for tomorrow's leaders.
-                    </p>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Solutions</h4>
-                    <ul>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="crm.html">CRM Software</a></li>
-                        <li><a href="#">Consulting</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">FaceBook</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; 2026 Aiva. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                threshold: 0.1
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-        });
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>

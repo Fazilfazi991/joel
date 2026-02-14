@@ -1,12 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/zohocrm",
-      "destination": "/zohocrm/index.html"
-    },
-    {
-      "source": "/zohocrm/((?!assets/|.*\\..*).*)",
-      "destination": "/zohocrm/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
