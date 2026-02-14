@@ -1,4 +1,4 @@
-import { ArrowRight, ShieldCheck, Trophy } from 'lucide-react';
+import { ArrowRight, ShieldCheck } from 'lucide-react';
 import Button from '../ui/Button';
 
 const Hero = () => {

@@ -1,4 +1,4 @@
-import { ShieldCheck, Users, Clock, Award } from 'lucide-react';
+import { ShieldCheck, Users, Clock } from 'lucide-react';
 
 const TrustBadges = () => {
     return (
