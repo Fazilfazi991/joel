@@ -16,7 +16,7 @@ import Footer from '../components/sections/Footer';
 
 function ZohoLanding() {
     return (
-        <div className="min-h-screen bg-white font-sans text-brand-dark">
+        <div className="min-h-screen bg-brand-gray-50 font-sans text-brand-dark">
             <Header />
             <main>
                 <Hero />
