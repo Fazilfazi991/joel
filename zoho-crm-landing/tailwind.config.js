@@ -12,9 +12,9 @@ export default {
             colors: {
                 brand: {
                     green: {
-                        DEFAULT: '#16A34A', // Green-600
-                        hover: '#15803D',   // Green-700
-                        light: '#22C55E',   // Green-500
+                        DEFAULT: '#56D964', // New Green
+                        hover: '#22C55E',   // Green-500 (Previous light)
+                        light: '#86EFAC',   // Green-300 (Lighter than new default)
                         50: '#F0FDF4',      // Green-50
                         100: '#DCFCE7',     // Green-100
                         200: '#BBF7D0',     // Green-200
