@@ -146,12 +146,7 @@ const ProductCard = ({ product, index }: { product: typeof products[0], index: n
                 <span className="text-xs text-brand-gray-400">
                     {product.usedBy}
                 </span>
-                <span className={`font-semibold text-sm inline-flex items-center gap-1 transition-all ${color.icon} group-hover:gap-2`}>
-                    <span>View Details</span>
-                    <svg className="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </span>
+                {/* View Details Removed */}
             </div>
         </div>
     );
