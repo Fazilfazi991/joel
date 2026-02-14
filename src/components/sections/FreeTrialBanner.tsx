@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 const FreeTrialBanner = () => {
     return (
-        <SectionWrapper background="gradient" className="bg-brand-green-600 text-white py-16">
+        <SectionWrapper background="gradient" className="bg-brand-green text-white py-16">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
                 <motion.div
                     className="max-w-2xl"
